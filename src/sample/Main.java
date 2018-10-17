@@ -90,7 +90,9 @@ public class Main extends Application {
     public void setGamePageController(GamePageController gamePageController) {
         this.gamePageController = gamePageController;
     }
-
+	/**
+	 * Launch the application.
+	 */
     public static void main(String[] args) {
         launch(args);
     }
