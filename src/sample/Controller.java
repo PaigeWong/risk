@@ -4,6 +4,9 @@ import sample.model.Player;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+* This is a controller class
+*/
 
 public class Controller {
 
