@@ -7,7 +7,10 @@ import javafx.scene.layout.AnchorPane;
 import sample.GameStatus;
 import sample.model.Country;
 import sample.utils.GameUtil;
-
+    /**
+	 * This class is to move Army
+	 * 
+	 */
 public class MoveArmy {
 
     @FXML
@@ -21,12 +24,21 @@ public class MoveArmy {
         options.setItems(FXCollections.observableArrayList(
                 GameUtil.findAllConnectedCountry(GameStatus.getInstance().getCurrentPlayer(), from)));
     }
-
+    /**
+	 * This method is move army with ArnchorPane
+	 * 
+	 * @return
+	 *           moveArmy
+	 */
     AnchorPane getMoveArmy() {
 
         return moveArmy;
     }
-
+    /**
+	 * This method is get the selected country
+	 * 
+	 * @return options.getValue
+	 */
     Country getSelected() {
 
         return options.getValue();
